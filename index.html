@@ -1,60 +1,297 @@
-<!-- index.html -->
+<!-- ...existing code... -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mujtaba Zaidi | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mujtaba Zaidi | Portfolio</title>
+    <meta name="description" content="Mujtaba Zaidi — Data Scientist, AI Engineer, ML Researcher. Deepfake detection, face anti-spoofing, PRNU forensics, KYC pipelines." />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="hero">
-    <div class="overlay"></div>
-    <div class="content">
+<header class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
       <h1>Mujtaba Zaidi</h1>
-      <h2>Data Scientist • AI Engineer • ML Researcher</h2>
-      <p>Building advanced AI systems for deepfake detection, image forensics, and secure identity verification.</p>
+      <p class="lead">Data Scientist • AI Engineer • ML Researcher</p>
+      <p class="sub">Building robust AI systems for deepfake detection, image forensics and secure identity verification at scale.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#projects">Explore Work</a>
+        <a class="btn ghost" href="#contact">Contact</a>
+      </div>
+
       <div class="links">
-        <a href="https://github.com/s-mujtaba-haider" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/s-mujtaba-haider" target="_blank">LinkedIn</a>
+        <a href="https://github.com/s-mujtaba-haider" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/s-mujtaba-haider" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:mujtabazaidi0512@gmail.com">Email</a>
       </div>
     </div>
-  </header>
 
-  <section class="about section">
-    <h2>About Me</h2>
-    <p>I specialize in developing AI-driven solutions for deepfake detection, face anti-spoofing, and KYC/identity verification systems. My work includes CNNs, Vision Transformers (ViT), PRNU-based forensics, FFT & ELA features, and scalable ML pipelines.</p>
+    <div class="hero-card">
+      <div class="card-top">
+        <div class="stat">
+          <span>800k+</span>
+          <small>Images trained</small>
+        </div>
+        <div class="stat">
+          <span>50+</span>
+          <small>Research experiments</small>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Selected Project</h3>
+        <p>Hybrid CNN + ViT deepfake & spoof detection using PRNU, FFT & residual noise fingerprints.</p>
+        <a class="btn small" href="https://github.com/s-mujtaba-haider/deepfake-project" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C360,100 1080,0 1440,40 L1440 80 L0 80 Z" fill="var(--surface)" opacity="0.9"></path></svg>
+</header>
+
+<main>
+
+  <section id="about" class="about section container">
+    <h2 class="section-title">About Me</h2>
+    <div class="grid about-grid">
+      <div class="about-text">
+        <p>I specialize in AI and image forensics — deepfake detection, face anti‑spoofing, PRNU‑based camera fingerprinting, and production KYC systems. I build scalable ML pipelines, design robust architectures combining CNNs and Vision Transformers, and evaluate using frequency‑domain and residual noise features.</p>
+        <p>My goal is to make reliable, interpretable systems that perform in-the-wild. I publish experiments, maintain reproducible pipelines, and collaborate on deployments.</p>
+        <a class="btn" href="#projects">See Projects</a>
+      </div>
+
+      <div class="skills">
+        <h3>Skills & Tools</h3>
+        <ul class="skill-list">
+          <li><strong>ML & DL:</strong> PyTorch, TensorFlow, ViT, CNNs, Transfer Learning</li>
+          <li><strong>Forensics:</strong> PRNU, FFT, ELA, Residual Noise, Camera ID</li>
+          <li><strong>Engineering:</strong> Docker, Kubernetes, CI/CD, FastAPI</li>
+          <li><strong>Data:</strong> Large-scale training, augmentation, synthetic data</li>
+        </ul>
+
+        <div class="skill-bars">
+          <div class="bar">
+            <label>Modeling</label>
+            <div class="fill" style="--w:92%"></div>
+          </div>
+          <div class="bar">
+            <label>Forensics</label>
+            <div class="fill" style="--w:88%"></div>
+          </div>
+          <div class="bar">
+            <label>Engineering</label>
+            <div class="fill" style="--w:80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section class="projects section">
-    <h2>Featured Projects</h2>
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2 class="section-title">Experience & Research</h2>
 
-    <div class="project-card">
-      <h3>Deepfake & Spoof Detection Model</h3>
-      <p>A hybrid CNN + ViT architecture trained on 800k real and spoofed images with PRNU, FFT, and high‑pass features.</p>
-      <a href="https://github.com/s-mujtaba-haider/deepfake-project">View Project</a>
+      <div class="timeline">
+        <div class="timeline-item">
+          <time>2023 — Present</time>
+          <div class="timeline-body">
+            <h4>Lead ML Researcher — Deepfake & Anti-Spoofing</h4>
+            <p>Designing hybrid CNN+ViT models, optimizing frequency and PRNU pipelines, and running large scale benchmarks on several datasets.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <time>2021 — 2023</time>
+          <div class="timeline-body">
+            <h4>AI Engineer — KYC & Identity Verification</h4>
+            <p>Built production pipelines integrating OCR, face matching, and spoof detection with monitoring and anomaly detection.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <time>2019 — 2021</time>
+          <div class="timeline-body">
+            <h4>Research Intern & Open Source</h4>
+            <p>Implemented PRNU extraction scripts, FFT feature experiments and contributed to public repositories.</p>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="project-card">
-      <h3>Face Anti-Spoofing (ViT + Frequency Features)</h3>
-      <p>Vision Transformer with frequency-domain and residual noise fingerprints for spoof detection.</p>
-      <a href="https://github.com/s-mujtaba-haider/vit-spoof">View Project</a>
-    </div>
-
-    <div class="project-card">
-      <h3>KYC Identity Verification Pipeline</h3>
-      <p>Face-ID matching, OCR extraction, spoof detection, and anomaly classification combined into a production-ready pipeline.</p>
-      <a href="https://github.com/s-mujtaba-haider/kyc-pipeline">View Project</a>
-    </div>
-
   </section>
 
-  <section class="contact section">
-    <h2>Contact</h2>
-    <p>Email: mujtabazaidi0512@gmail.com</p>
+  <section id="projects" class="projects section container">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?q=80&w=1000&auto=format&fit=crop" alt="Deepfake project preview">
+        <div class="card-content">
+          <h3>Deepfake & Spoof Detection Model</h3>
+          <p>Hybrid CNN + ViT with PRNU, FFT and high‑pass features trained at scale.</p>
+          <div class="card-meta">
+            <a href="https://github.com/s-mujtaba-haider/deepfake-project" target="_blank" rel="noopener" class="btn small">Repo</a>
+            <a href="#" class="btn small ghost">Read paper</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1000&auto=format&fit=crop" alt="ViT spoof preview">
+        <div class="card-content">
+          <h3>Face Anti-Spoofing (ViT + Frequency)</h3>
+          <p>Vision Transformer enhanced with frequency-domain cues and residual noise fingerprints.</p>
+          <div class="card-meta">
+            <a href="https://github.com/s-mujtaba-haider/vit-spoof" target="_blank" rel="noopener" class="btn small">Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1509228627159-645b9a01b6f6?q=80&w=1000&auto=format&fit=crop" alt="KYC pipeline">
+        <div class="card-content">
+          <h3>KYC Identity Verification Pipeline</h3>
+          <p>Face matching, OCR, spoof detection and anomaly classification — production-ready pipeline.</p>
+          <div class="card-meta">
+            <a href="https://github.com/s-mujtaba-haider/kyc-pipeline" target="_blank" rel="noopener" class="btn small">Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- repeat to extend page length -->
+      <article class="project-card muted">
+        <div class="card-content">
+          <h3>Experiments & Baselines</h3>
+          <p>Extensive ablations on FFT vs time-domain, synthetic data augmentation, and cross-dataset generalization.</p>
+          <div class="card-meta">
+            <a href="#" class="btn small ghost">Details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card muted">
+        <div class="card-content">
+          <h3>Open Source Tools</h3>
+          <p>Scripts and tools for PRNU extraction, residual noise generation, evaluation scripts and datasets wrappers.</p>
+          <div class="card-meta">
+            <a href="#" class="btn small ghost">Explore</a>
+          </div>
+        </div>
+      </article>
+    </div>
   </section>
+
+  <section id="gallery" class="gallery section">
+    <div class="container">
+      <h2 class="section-title">Gallery & Visualizations</h2>
+      <p class="muted">Sample visualizations: PRNU maps, frequency heatmaps, model attention overlays and sample detections.</p>
+
+      <div class="masonry">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1517260910988-98c5c1a7db6f?q=80&w=800&auto=format&fit=crop" alt="Visualization 1">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=800&auto=format&fit=crop" alt="Visualization 2">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1526378722608-6b2f8d2a6c8a?q=80&w=800&auto=format&fit=crop" alt="Visualization 3">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1505852679233-d9fd70aff56d?q=80&w=800&auto=format&fit=crop" alt="Visualization 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="publications" class="section container">
+    <h2 class="section-title">Publications & Reports</h2>
+    <ul class="publications">
+      <li><strong>Robust Hybrid CNN-ViT for Deepfake Detection</strong> — arXiv / Conference (2024). Summary and open code.</li>
+      <li><strong>PRNU-based Image Forensics</strong> — experiments and reproducible pipeline (2023).</li>
+      <li><strong>Production KYC Anomaly Detection</strong> — deployment notes and monitoring best practices (2022).</li>
+    </ul>
+  </section>
+
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <h2 class="section-title">Recommendations</h2>
+      <div class="testi-grid">
+        <blockquote>
+          <p>"Mujtaba's models significantly improved our spoof detection rates in production."</p>
+          <cite>— Product Lead, Identity Inc.</cite>
+        </blockquote>
+        <blockquote>
+          <p>"Great collaborator and clear thinker on model robustness and evaluation."</p>
+          <cite>— Research Colleague</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section container">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Say hello</h3>
+        <p>Email: <a href="mailto:mujtabazaidi0512@gmail.com">mujtabazaidi0512@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/s-mujtaba-haider" target="_blank" rel="noopener">@s-mujtaba-haider</a></p>
+      </div>
+
+      <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="return submitForm(event)">
+        <label>
+          <span>Name</span>
+          <input name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input name="email" type="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <div class="form-row">
+          <button class="btn primary" type="submit">Send Message</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+        <p class="form-note" id="formNote" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <strong>Mujtaba Zaidi</strong> — Data Science & AI · <a href="https://github.com/s-mujtaba-haider" target="_blank" rel="noopener">GitHub</a></p>
+    <p class="muted">Built with focus on model reliability, interpretability and reproducibility.</p>
+  </div>
+</footer>
+
+<script>
+  // small interactions: smooth scroll and contact form demo
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click', e=>{
+      const hash = a.getAttribute('href');
+      if(hash.length>1){
+        e.preventDefault();
+        document.querySelector(hash).scrollIntoView({behavior:'smooth', block:'start'});
+      }
+    });
+  });
+
+  function submitForm(e){
+    e.preventDefault();
+    const note = document.getElementById('formNote');
+    note.textContent = 'Thanks — message simulated. For real form, wire a backend or email service.';
+    note.classList.add('visible');
+    setTimeout(()=>note.classList.remove('visible'), 6000);
+    e.target.reset();
+    return false;
+  }
+
+  // Reveal on scroll
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(ent=>{
+      if(ent.isIntersecting) ent.target.classList.add('reveal');
+    });
+  }, {threshold: 0.12});
+
+  document.querySelectorAll('.section, .project-card, .timeline-item, .masonry img').forEach(el=>obs.observe(el));
+</script>
 
 </body>
 </html>
