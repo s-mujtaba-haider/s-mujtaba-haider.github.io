@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #000;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero h2 {
+  margin: 5px 0;
+  color: #888;
+}
+
+.links a {
+  margin: 10px;
+  color: cyan;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project {
+  background: #1b1b1b;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
