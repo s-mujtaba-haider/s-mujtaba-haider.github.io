@@ -1,142 +1,60 @@
-// ...existing code...
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mujtaba Zaidi | Data Scientist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mujtaba Zaidi | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <span class="logo">MZ</span>
-        <div>
-          <div class="name">Mujtaba Zaidi</div>
-          <div class="role">Data Scientist • AI Engineer</div>
-        </div>
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Mujtaba Zaidi</h1>
+      <h2>Data Scientist • AI Engineer • ML Researcher</h2>
+      <p>Building advanced AI systems for deepfake detection, image forensics, and secure identity verification.</p>
+      <div class="links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
       </div>
-      <nav class="nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a class="cta" href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </nav>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-bg">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-      </div>
+  <section class="about section">
+    <h2>About Me</h2>
+    <p>I specialize in developing AI-driven solutions for deepfake detection, face anti-spoofing, and KYC/identity verification systems. My work includes CNNs, Vision Transformers (ViT), PRNU-based forensics, FFT & ELA features, and scalable ML pipelines.</p>
+  </section>
 
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Building trustworthy AI for image forensics & identity verification</h1>
-          <p class="tagline">Deepfake detection • Face anti‑spoofing • KYC pipelines • Vision Transformers & frequency analysis</p>
+  <section class="projects section">
+    <h2>Featured Projects</h2>
 
-          <div class="hero-actions">
-            <a class="btn primary" href="https://github.com/yourusername/deepfake-project" target="_blank" rel="noopener noreferrer">Explore Deepfake Model</a>
-            <a class="btn ghost" href="#projects">View Projects</a>
-          </div>
+    <div class="project-card">
+      <h3>Deepfake & Spoof Detection Model</h3>
+      <p>A hybrid CNN + ViT architecture trained on 800k real and spoofed images with PRNU, FFT, and high‑pass features.</p>
+      <a href="https://github.com/yourusername/deepfake-project">View Project</a>
+    </div>
 
-          <div class="quick-links">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:your@email.com">Email</a>
-          </div>
-        </div>
+    <div class="project-card">
+      <h3>Face Anti-Spoofing (ViT + Frequency Features)</h3>
+      <p>Vision Transformer with frequency-domain and residual noise fingerprints for spoof detection.</p>
+      <a href="https://github.com/yourusername/vit-spoof">View Project</a>
+    </div>
 
-        <div class="hero-card">
-          <div class="card-inner">
-            <div class="stat">
-              <div class="num">100M+</div>
-              <div class="label">Images processed</div>
-            </div>
-            <div class="stat">
-              <div class="num">50+</div>
-              <div class="label">Research & production models</div>
-            </div>
-            <div class="stat">
-              <div class="num">20ms</div>
-              <div class="label">Average inference speed</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <div class="project-card">
+      <h3>KYC Identity Verification Pipeline</h3>
+      <p>Face-ID matching, OCR extraction, spoof detection, and anomaly classification combined into a production-ready pipeline.</p>
+      <a href="https://github.com/yourusername/kyc-pipeline">View Project</a>
+    </div>
 
-    <section id="about" class="about container">
-      <h2>About</h2>
-      <p>I design and ship AI systems for image forensics, deepfake detection, and identity verification. My toolset includes CNNs, Vision Transformers, PRNU/FFT-based methods, and full-stack deployment for scalable KYC pipelines.</p>
-    </section>
+  </section>
 
-    <section id="projects" class="projects container">
-      <h2>Projects</h2>
-      <div class="grid">
-        <article class="project">
-          <div class="project-head">
-            <h3>Deepfake & Spoof Detection Model</h3>
-            <span class="tag">CNN + ViT</span>
-          </div>
-          <p>Custom hybrid model combining convolutional feature extraction with transformers and frequency-domain cues to robustly detect manipulated images and videos.</p>
-          <div class="project-actions">
-            <a class="link" href="https://github.com/yourusername/deepfake-project" target="_blank" rel="noopener noreferrer">View Repo</a>
-          </div>
-        </article>
+  <section class="contact section">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+  </section>
 
-        <article class="project">
-          <div class="project-head">
-            <h3>Face Anti-Spoofing (ViT + PRNU)</h3>
-            <span class="tag">ViT • PRNU</span>
-          </div>
-          <p>Vision Transformer fused with sensor-pattern noise (PRNU) and frequency analysis to detect presentation attacks and spoof attempts.</p>
-          <div class="project-actions">
-            <a class="link" href="https://github.com/yourusername/vit-spoof" target="_blank" rel="noopener noreferrer">View Repo</a>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <h3>KYC Identity Verification Pipeline</h3>
-            <span class="tag">OCR • Face-ID</span>
-          </div>
-          <p>End-to-end pipeline for document capture, OCR, face matching and spoof detection with auditing and monitoring for production use.</p>
-          <div class="project-actions">
-            <a class="link" href="https://github.com/yourusername/kyc-pipeline" target="_blank" rel="noopener noreferrer">View Repo</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section id="contact" class="contact container">
-      <h2>Contact</h2>
-      <p>Interested in collaborations, research or hiring? Send an email — <a href="mailto:your@email.com">your@email.com</a>.</p>
-      <div class="socials">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Mujtaba Zaidi — Built with modern ML & web technologies</div>
-  </footer>
-
-  <script>
-    // Accessibility: respect reduced motion
-    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-      document.documentElement.style.setProperty('--animate', 'true');
-    } else {
-      document.documentElement.style.setProperty('--animate', 'false');
-    }
-
-    // Populate year
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
